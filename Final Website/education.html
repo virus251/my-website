@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>MUHAMMAD NAUMAN IRSHAD</h1>
+        </header>
+        <div class="main">
+            <aside class="sidebar">
+                <img src="your-photo.jpg" alt="Your Photo" class="photo-frame">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="experience.html">Experience</a></li>
+                        <li><a href="research.html">Research Work</a></li>
+                        <li><a href="downloads.html">Downloads</a></li>
+                        <li><a href="photography.html">Photography</a></li>
+                        <li><a href="trainings.html">Professional Trainings</a></li>
+                        <li><a href="awards.html">Distinctions & Awards</a></li>
+                        <li><a href="activities.html">Co-Curricular, Social, and Volunteer Activities</a></li>
+                        <li><a href="skills.html">Skills and Languages</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <div class="content">
+                <section id="education">
+                    <h2>Education</h2>
+                    <h3>Master of Engineering in Information & Communication Engineering</h3>
+                    <p>University of Science & Technology Beijing, CN<br>2016 - 2019</p>
+                    <p>Subsidiaries: Digital Communication, Advanced Communication Coding Theory, Calculation Method, Internet of Things (IoT), Artificial Psychology and Emotion Processing, Mobile Internet, Communication Signal Processing, Information Theory & Network Coding, Chinese Language I-II</p>
+                    <h3>Bachelor of Science in Electronics</h3>
+                    <p>GC University, Lahore, PK<br>2011 - 2015</p>
+                    <p>Subsidiaries: Physics, Mathematics, Calculus & Advanced Calculus, English Literature, Communication Skills, Basic & Digital Electronics, Microprocessor Controller & Programming, Power Electronics, Electronics Communication, Signal & System, DSP, Control System, Bio-Medical Electronics, Bio-Medical Instrumentation, Artificial Intelligence, Image Processing, C++ & Computer Applications</p>
+                    <h3>Certifications</h3>
+                    <ul>
+                        <li>"Google Analytics for Beginners" by Google Analytics Academy (2020-23)</li>
+                        <li>"Machine Learning with Python" Course by Cognitiveclass.io in Association with IBM Developer Skills Network</li>
+                        <li>"Certified Information Systems Security Professional" (CISSP) Course by "EDUONIX LEARNING SOLUTIONS"</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Get all navigation links
+        const navLinks = document.querySelectorAll('nav ul li a');
+        
+        // Loop through each link
+        navLinks.forEach(link => {
+            // Check if the current URL matches the link's href
+            if (link.href === window.location.href) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>MUHAMMAD NAUMAN IRSHAD</h1>
+        </header>
+        <div class="main">
+            <aside class="sidebar">
+                <img src="your-photo.jpg" alt="Your Photo" class="photo-frame">
+                <nav>
+                    <ul>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="education.html">Education</a></li>
+                            <li><a href="experience.html">Experience</a></li>
+                            <li><a href="research.html">Research Work</a></li>
+                            <li><a href="downloads.html">Downloads</a></li>
+                            <li><a href="photography.html">Photography</a></li>
+                            <li><a href="trainings.html">Professional Trainings</a></li>
+                            <li><a href="awards.html">Distinctions & Awards</a></li>
+                            <li><a href="activities.html">Co-Curricular, Social, and Volunteer Activities</a></li>
+                            <li><a href="skills.html">Skills and Languages</a></li>
+                        </ul>
+                </nav>
+            </aside>
+            <div class="content">
+                <section id="experience">
+                    <h2>Work Experience</h2>
+                    <h3>Internship Experience:</h3>
+                    <p><strong>Trainee Engineer</strong><br>
+                       Pakistan Television Corporation (PTV)<br>
+                       6 Nov 2015 - 10 Jan 2016</p>
+                    <p>During the two months internship at PTV Lahore Center, I gained experience in technical work by managing different tasks including recording various programs and assisting in live broadcasts.</p>
+                    <p><strong>Trainee Engineer</strong><br>
+                       Pak Elektron Limited (PEL Pakistan)<br>
+                       11 July 2014 - 12 Aug 2014</p>
+                    <p>One Month Internship Experience in the Energy Meter Plant (EMP) department of Pak Elektron Limited Industry Lahore.</p>
+                    <h3>Professional Experience:</h3>
+                    <p><strong>Lecturer</strong><br>
+                       Lahore Garrison University, Lahore PK<br>
+                       Mar 2022 - Till Date<br>
+                       Lecturer in the Department of Information Technology</p>
+                    <p><strong>Lecturer</strong><br>
+                       National Textile University, Karachi Campus, PK<br>
+                       Sep 2021 - Mar 2022<br>
+                       Worked as a Visiting Lecturer for Computer Science and IT subjects</p>
+                    <p><strong>Science Communicator</strong><br>
+                       TDF MagnifiScience Centre Karachi, PK<br>
+                       Sep 2021 - Mar 2022<br>
+                       Worked as a Science Communicator at TDF MagnifiScience Centre for ICT and Physical Sciences.</p>
+                    <p><strong>Lecturer</strong><br>
+                       Punjab Group of Colleges, PK<br>
+                       Jan 2020 - Sep 2021<br>
+                       Worked as a Lecturer for Computer Science and Physics</p>
+                    <p><strong>Assistant IT Engineer & Device Tester</strong><br>
+                       CSOFT International Ltd. Beijing, CN<br>
+                       Aug 2017 - Sep 2020<br>
+                       Worked as an IT Engineer & Devices Tester for Urdu language testing</p>
+                    <p><strong>Lecturer</strong><br>
+                       Central Institute of Management Sciences (CIMS) Lahore, PK<br>
+                       Aug 2015 - Aug 2016<br>
+                       Worked as a Lecturer for Undergraduate Classes in the CS & IT department</p>
+                    <p><strong>Physics Teacher</strong><br>
+                       Al-Hassan Academy, Lahore, PK<br>
+                       Dec 2012 - Jul 2015<br>
+                       Worked as a Physics Teacher for High School & College Classes</p>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Get all navigation links
+        const navLinks = document.querySelectorAll('nav ul li a');
+        
+        // Loop through each link
+        navLinks.forEach(link => {
+            // Check if the current URL matches the link's href
+            if (link.href === window.location.href) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+    
+</body>
+</html>

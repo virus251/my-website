@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUHAMMAD NAUMAN IRSHAD - Photography</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>MUHAMMAD NAUMAN IRSHAD</h1>
+        </header>
+        <div class="main">
+            <aside class="sidebar">
+                <img src="your-photo.jpg" alt="Your Photo" class="photo-frame">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="experience.html">Experience</a></li>
+                        <li><a href="research.html">Research Work</a></li>
+                        <li><a href="downloads.html">Downloads</a></li>
+                        <li><a href="photography.html">Photography</a></li>
+                        <li><a href="trainings.html">Professional Trainings</a></li>
+                        <li><a href="awards.html">Distinctions & Awards</a></li>
+                        <li><a href="activities.html">Co-Curricular, Social, and Volunteer Activities</a></li>
+                        <li><a href="skills.html">Skills and Languages</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <div class="content">
+                <section id="photography">
+                    <h2>Photography</h2>
+                    <p>Here are some of my photography works. I specialize in capturing landscapes, portraits, and urban scenes. I also share my work on <a href="https://twitter.com" target="_blank">Twitter</a> (X), <a href="https://youtube.com" target="_blank">YouTube</a>, and <a href="https://grushots.com" target="_blank">GruShots</a>. Additionally, I do calligraphy and artwork. Follow me on my social accounts below and stay tuned for future updates!</p>
+
+                    <div class="social-icons">
+                        <a href="https://twitter.com" target="_blank"><img src="icons/twitter.jpeg" alt="Twitter"></a>
+                        <a href="https://youtube.com" target="_blank"><img src="icons/youtube.jpeg" alt="YouTube"></a>
+                        <a href="https://grushots.com" target="_blank"><img src="icons/gurushots.png" alt="GruShots"></a>
+                    </div>
+
+                    <div class="gallery">
+                        <figure>
+                            <img src="photo1.jpg" alt="Photo 1">
+                            <figcaption>Caption for Photo 1</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="photo2.jpg" alt="Photo 2">
+                            <figcaption>Caption for Photo 2</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="photo3.jpg" alt="Photo 3">
+                            <figcaption>Caption for Photo 3</figcaption>
+                        </figure>
+                        <!-- Example for future expansion:
+                             <figure>
+                                 <img src="your-photo4.jpg" alt="Photo 4">
+                                 <figcaption>Caption for Photo 4</figcaption>
+                             </figure>
+                             Replace "your-photo4.jpg" with your actual file name.
+                             Replace "Caption for Photo 4" with the actual caption.
+                        -->
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Get all navigation links
+        const navLinks = document.querySelectorAll('nav ul li a');
+        
+        // Loop through each link
+        navLinks.forEach(link => {
+            // Check if the current URL matches the link's href
+            if (link.href === window.location.href) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>
