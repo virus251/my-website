@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>MUHAMMAD NAUMAN IRSHAD</h1>
+        </header>
+        <div class="main">
+            <aside class="sidebar">
+                <img src="your-photo.jpg" alt="Your Photo" class="photo-frame">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="experience.html">Experience</a></li>
+                        <li><a href="research.html">Research Work</a></li>
+                        <li><a href="downloads.html">Downloads</a></li>
+                        <li><a href="photography.html">Photography</a></li>
+                        <li><a href="trainings.html">Professional Trainings</a></li>
+                        <li><a href="awards.html">Distinctions & Awards</a></li>
+                        <li><a href="activities.html">Co-Curricular, Social, and Volunteer Activities</a></li>
+                        <li><a href="skills.html">Skills and Languages</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <div class="content">
+                <section id="about">
+                    <h2>About Me</h2>
+                    <p>I am a research scholar with a creative mind, passionate about teaching, technology, and exploration. With experience as a Lecturer, IEEE Peer Reviewer, and an enthusiast Photographer and Videographer, I am always eager to explore new technologies and contribute to the academic and professional world.</p>
+                    <p>My research interests lie in Electronics Communication, Computer Networks, IoT Networks, M-MIMO, Wireless & Mobile Communication, UAVs, SDN, WSNs, AI & Machine Learning, Optimization Theory and Application.</p>
+                    <p>In my free time, I enjoy Calligraphy, Photo and Videography, and I'm an avid sports enthusiast, particularly in Archery, Badminton and Cricket.</p>
+                    <p><strong>Contact Details:</strong></p>
+                    <p>Email: <a href="mailto:m.nauman0251@outlook.com">m.nauman0251@outlook.com</a><br>
+                       LinkedIn: <a href="https://www.linkedin.com/nauman0251" target="_blank">www.linkedin.com/nauman0251</a><br>
+                       WeChat: nauman0251<br>
+                       Skype: nauman.251</p>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Get all navigation links
+        const navLinks = document.querySelectorAll('nav ul li a');
+        
+        // Loop through each link
+        navLinks.forEach(link => {
+            // Check if the current URL matches the link's href
+            if (link.href === window.location.href) {
+                link.classList.add('active');
+            }
+        });
+    </script>    
+</body>
+</html>

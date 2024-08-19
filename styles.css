@@ -1,0 +1,265 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #a19a9a;
+}
+
+/* Container for the Page */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Header H1 (Name) Alignment */
+header h1 {
+    margin: 0 auto;
+    font-size: 2.5em;
+    color: #000000;
+    max-width: 800px;
+    padding-left: 300px;
+    padding-right: 50px;
+}
+
+/* Main Layout Structure */
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 220px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+/* Navigation Menu Styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    display: block;
+    width: 180px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #1b1a1a;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+nav ul li a.active {
+    background-color: #603333 !important;
+    color: #fff !important;
+}
+
+/* Profile Photo Frame */
+.photo-frame {
+    width: 140px;
+    height: 169px;
+    border-radius: 54%;
+    margin-bottom: 25px;
+    object-fit: cover;
+    object-position: top;
+    border: 2px solid rgb(109, 67, 67);
+}
+
+/* Content Area Styles */
+.content {
+    flex-grow: 1;
+    background-color: rgb(192, 189, 189);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    min-height: 400px;
+    max-width: 800px;
+    margin-left: 20px;
+}
+
+/* Consistent spacing for content inside sections */
+section {
+    margin-bottom: 40px;
+}
+
+/* Landing Page Styles */
+.landing-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('1back.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 0 50px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden; /* Apply overflow hidden only to landing page */
+
+    /* Manual adjustments for the background image position */
+    background-position-x: 50%; /* Adjust left-right (horizontal) position */
+    background-position-y: 95%; /* Adjust up-down (vertical) position */
+}
+
+
+.landing-image img {
+    height: 128vh; /* Keep the height slightly larger to achieve the zoom */
+    width: auto;
+    transform: scale(1.2); /* Zoom in the image */
+    object-position: top; /* Keep the top of the image fixed */
+}
+
+.landing-text {
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent black banner */
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    width: 100%; /* Adjust width as needed */
+    text-align: center; /* Align text to the left */
+    position: absolute;
+    left: 20%; /* Position the banner */
+    top: 43%; /* Position the banner */
+    transform: translate(-20%, -40%); /* Center the banner */
+}
+
+.landing-text h1 {
+    font-size: 3.2em;
+    margin-bottom: 30px;
+    margin-left: 280px; /* Move the text right */
+}
+
+.landing-text p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    margin-left: 280px; /* Move the text right */
+}
+
+.explore-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF5722;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+    margin-left: 280px; /* Adjust this value to move the button right or left */
+    margin-top: 2px; /* Adjust this value to move the button up or down */
+}
+
+
+.explore-button:hover {
+    background-color: #E64A19;
+}
+
+/* Gallery Styles */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery figure {
+    width: 30%;
+    margin: 0;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.gallery figcaption {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Social Icons Styles */
+.social-icons {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 40px;
+    height: auto;
+}
+
+/* Skill Bars */
+.skill-bar p {
+    margin: 0 0 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.bar-container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+.bar {
+    height: 20px;
+    border-radius: 25px;
+}
+
+.bar.english {
+    width: 90%;
+    background-color: #4CAF50;
+}
+
+.bar.urdu {
+    width: 100%;
+    background-color: #4CAF50;
+}
+
+.bar.arabic {
+    width: 35%;
+    background-color: #FF9800;
+}
+
+.bar.chinese {
+    width: 30%;
+    background-color: #cb8722;
+}
